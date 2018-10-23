@@ -12,4 +12,8 @@ class River
     @fishes << fish
   end
 
+  def fish_count
+    @fishes.count
+  end
+
 end

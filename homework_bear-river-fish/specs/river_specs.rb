@@ -35,4 +35,14 @@ class Test_River < MiniTest::Test
     assert_equal([rod,jane,freddy], @amazon.fishes)
   end
 
+  def test_fish_count
+    rod = Fish.new("Rod")
+    jane = Fish.new("Jane")
+    freddy = Fish.new("Freddy")
+    @amazon.add_fish(rod)
+    @amazon.add_fish(jane)
+    @amazon.add_fish(freddy)
+    assert_equal(3, @amazon.fish_count)
+  end
+
 end
