@@ -4,9 +4,9 @@ We are going to build a small ecosystem! We want to create an ecosystem made up 
 
 ## How Our Ecosystem Works
 
-- A river should have a name e.g. "Amazon"
-- A river should hold many fish
-- A fish should have a name
+- A river should have a name e.g. "Amazon" [done]
+- A river should hold many fish [done]
+- A fish should have a name [done]
 
 - A bear should have a name e.g. "Yogi" and a type e.g. "Grizzly"
 - A bear should have an empty stomach ( maybe an array )

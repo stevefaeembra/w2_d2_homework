@@ -7,4 +7,9 @@ class River
     @fishes = []
   end
 
+  def add_fish(fish)
+    #todo add test to see if a fish
+    @fishes << fish
+  end
+
 end
