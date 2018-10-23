@@ -59,4 +59,29 @@ class BusTest < MiniTest::Test
 
   end
 
+
+  def test_drop_off
+    person1 = Person.new("Joe", 45)
+    @bus.pick_up(person1)
+    person2 = Person.new("Sue", 32)
+    @bus.pick_up(person2)
+
+    @bus.drop_off(person2)
+
+    expected =1
+    actual = @bus.passengers.count
+    assert_equal(expected, actual)
+
+    expected = person1
+    actual = @bus.passengers[0]
+    assert_equal(expected, actual)
+  end
+
+  def test_empty_bus
+    @bus.empty()
+    expected = 0
+    actual = @bus.passengers.length
+    assert_equal(expected, actual)
+  end
+
 end
